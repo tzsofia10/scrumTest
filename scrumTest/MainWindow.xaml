@@ -5,8 +5,67 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:scrumTest"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="Scrum Test" Height="580" Width="1100" FontFamily="Arial Black" FontSize="22">
     <Grid>
+        <Label Content="Scrum Test" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top"/>
+        <Label Content="Neved:" HorizontalAlignment="Left" Margin="10,60,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Width="75"/>
+        <TextBox HorizontalAlignment="Left" Margin="136,63,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228" Background="#FFBFBEBE"/>
+        <Label Content="E-mail címed:" HorizontalAlignment="Left" Margin="0,113,0,0" VerticalAlignment="Top" FontFamily="Arial" FontSize="15" Width="136"/>
+        <TextBox HorizontalAlignment="Left" Margin="141,116,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="228" Background="#FFBFBEBE"/>
+        <Label Content="1.Ki a Scrum csapat vezetője?" HorizontalAlignment="Left" Margin="4,161,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <ListBox HorizontalAlignment="Left" Height="76" Margin="10,194,0,0" VerticalAlignment="Top" Width="207" >
+            <ListBoxItem FontFamily="Arial" FontSize="12">Product Owner</ListBoxItem>
+            <ListBoxItem FontFamily="Arial" FontSize="12">Srum Master</ListBoxItem>
+            <ListBoxItem FontFamily="Arial" FontSize="12">Developer Team</ListBoxItem>
+        </ListBox>
+        <Label Content="2.Milyen módszertan a Scrum módszertan?" HorizontalAlignment="Left" Margin="4,297,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <ComboBox HorizontalAlignment="Left" Margin="10,347,0,0" VerticalAlignment="Top" Width="341" FontSize="12" FontFamily="Arial">
+            <ComboBoxItem>Sprint Planning Meeting</ComboBoxItem>
+            <ComboBoxItem>Daily Conversion</ComboBoxItem>
+            <ComboBoxItem>Sprint Retrospective</ComboBoxItem>
+            <ComboBoxItem>Blacklog Grooming</ComboBoxItem>
+        </ComboBox>
+        <Label Content="3.Milyen eseményeket ismersz a Scrumban?" HorizontalAlignment="Left" Margin="4,383,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <StackPanel HorizontalAlignment="Left" Height="87" Margin="10,439,0,0" VerticalAlignment="Top" Width="302">
+            <CheckBox Content="Sprint Planning Meeting" FontSize="12" FontFamily="Arial"/>
+            <CheckBox Content="Daily Conversion" FontSize="12" FontFamily="Arial"/>
+            <CheckBox Content="Sprint Retrospective" FontSize="12" FontFamily="Arial"/>
+            <CheckBox Content="Blacklog Grooming" FontSize="12" FontFamily="Arial"/>
+        </StackPanel>
+        <TextBlock HorizontalAlignment="Left" Margin="406,60,0,0" TextWrapping="Wrap" Text="Ez a teszt arra szolgál, hogy felmérje a tudásodat a Scrum módszertannal kapcsolatban. Amennyiben a teszt eredménye sikeres, veregesd meg a bal vállad a jobb kezeddel. Amennyiben nem sikeres a teszt, itt az ideje tanulni, mert nemsokára számonkérés következik a fenti módszertan anyagából." VerticalAlignment="Top" Width="374" Height="115" FontSize="15" FontFamily="Arial" TextAlignment="Justify"/>
+        <Label Content="2.Milyen módszertan a Scrum módszertan?" HorizontalAlignment="Left" Margin="4,297,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <Label Content="4.Milyen dokumentumokat ismersz a Scrumban?" HorizontalAlignment="Left" Margin="406,205,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <StackPanel HorizontalAlignment="Left" Height="97" Margin="420,270,0,0" VerticalAlignment="Top" Width="320">
+            <RadioButton Content="Product Backlog" FontSize="12" FontFamily="Arial"/>
+            <RadioButton Content="Sprint Retrospective" FontSize="12" FontFamily="Arial"/>
+            <RadioButton Content="Daily Scrum" FontSize="12" FontFamily="Arial"/>
+        </StackPanel>
+        <Label Content="4.Milyen dokumentumokat ismersz a Scrumban?" HorizontalAlignment="Left" Margin="406,205,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <Label Content="5.Milyen típusú módszertan a Scrum?" HorizontalAlignment="Left" Margin="406,338,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial" RenderTransformOrigin="0.5,0.5">
+            <Label.RenderTransform>
+                <TransformGroup>
+                    <ScaleTransform/>
+                    <SkewTransform/>
+                    <RotateTransform Angle="0.04"/>
+                    <TranslateTransform/>
+                </TransformGroup>
+            </Label.RenderTransform>
+        </Label>
+        <TextBox HorizontalAlignment="Left" Margin="406,383,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="281" Height="27" FontSize="12" FontFamily="Arial"/>
+        <Button Content="Kész" HorizontalAlignment="Left" Margin="476,455,0,0" VerticalAlignment="Top" Width="155" Height="50"/>
+        <Label Content="Válaszok:" HorizontalAlignment="Left" Margin="844,71,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <Label Content="1.feladat" HorizontalAlignment="Left" Margin="817,113,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <Label Content="2.feladat" HorizontalAlignment="Left" Margin="814,175,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <Label Content="3.feladat" HorizontalAlignment="Left" Margin="801,261,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <Label Content="4.feladat" HorizontalAlignment="Left" Margin="817,383,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <Label Content="5.feladat" HorizontalAlignment="Left" Margin="814,478,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="796,397,0,0" VerticalAlignment="Top" FontSize="15" FontFamily="Arial"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="885,146,0,0" VerticalAlignment="Top" FontSize="12" FontFamily="Arial" Height="29" Width="205" Background="#FFDF8EFF"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="882,216,0,0" VerticalAlignment="Top" FontSize="12" FontFamily="Arial" Height="25" Width="205" Background="#FFDF8EFF"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="880,423,0,0" VerticalAlignment="Top" FontSize="12" FontFamily="Arial" Height="30" Width="207" Background="#FFDF8EFF"/>
+        <Label Content="" HorizontalAlignment="Left" Margin="885,515,0,0" VerticalAlignment="Top" FontSize="12" FontFamily="Arial" Height="25" Width="202" Background="#FFDF8EFF"/>
+        <ListBox HorizontalAlignment="Left" Height="104" Margin="885,282,0,0" VerticalAlignment="Top" Width="205" FontSize="12" FontFamily="Arial"/>
+
 
     </Grid>
 </Window>
